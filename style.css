@@ -81,6 +81,7 @@ body {
     width: 1192px;
     height: 178px;
     line-height: 89px;
+    letter-spacing: -3.5px;
 }
 .subtitle {
     color: #9D9FA1;
@@ -101,5 +102,19 @@ body {
     height:727;
     align-items: center;
     margin-left: 80px;
+}
+.first-text {
+    color:#9D9FA1 ;
+    font-size: 14px;
+    font-weight: 400;
+}
+.second-text {
+    color: #9D9FA1;
+    font-weight: 600;
+    font-size: 14px;
+}
+.double-text {
+    display: flex;
+    flex-direction: row;
 }
 
