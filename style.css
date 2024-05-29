@@ -71,8 +71,8 @@ body {
     height: 879px;
     width: 100%;
     background-color: black;
-    display: flex;
-    align-items: center;
+
+    margin-bottom: 40px;
 }
 .title {
     color: white;
@@ -102,6 +102,7 @@ body {
     height:727;
     align-items: center;
     margin-left: 80px;
+    border: #FB432C 1px solid;
 }
 .first-text {
     color:#9D9FA1 ;
@@ -116,5 +117,9 @@ body {
 .double-text {
     display: flex;
     flex-direction: row;
+}
+.something {
+    
+    position: absolute;
 }
 
