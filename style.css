@@ -70,7 +70,7 @@ body {
 .first-slide {
     height: 968px;
     width: 100%;
-    background-color: black;
+    background-color: #111111;
     display: flex;
     
     justify-content: center;
