@@ -19,6 +19,7 @@ a {
 .header-buttons {
     display: flex;
     justify-self: end;
+    gap: 20px;
 }
 .nav-menu {
     display: flex;
@@ -38,6 +39,7 @@ a {
     align-items: center;
     font-size: 14px;
     font-weight: 600;
+    justify-content: space-between;
 }
 .header-button {
     border: none;
@@ -85,11 +87,13 @@ body {
     letter-spacing: -3.5px;
     margin-top: 93px;
     margin-bottom: 93px;
+    text-align: center;
 }
 .subtitle {
     color: #9D9FA1;
     font-size: 20px;
     font-weight: 400px;
+    margin-bottom: 32px;
 }
 .first-slide-button {
     color: white;
@@ -98,13 +102,17 @@ body {
     height: 52px;
     border-radius: 39px;
     margin-top: 32px;
+    font-family: "inter";
+    border: none;
+    box-shadow: inset 0px -1.5px 0px 0px #FFFFFF52, inset 0px 0.5px 0px 0px #FFFFFF52;
 }
 .first-slide-container {
     display: flex;
     flex-direction: column;
     width: 1280px;
-    height:727px;
+    height:100%;
     align-items: center;
+    position: relative;
    
 }
 .first-text {
@@ -121,10 +129,14 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 24px;
+    gap: 8px;
 }
 .something {
-    margin-top: 93px;
     position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    margin-bottom: 88px;
 }
 
 .ad {
@@ -136,6 +148,9 @@ body {
     align-items: center;
     justify-content: center;
     gap:48px;
+    animation-name: ad;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
 }
 .first-card {
     background-color: #111111;
@@ -239,3 +254,43 @@ body {
 .second-card-img {
     margin-right: 80px;
 }
+@media(max-width: 1280px){
+    .first-slide-container {
+        width: 100%;
+    }
+}
+.burger-menu {
+    display: none;
+}
+@media(max-width: 928px){
+    .burger-menu {
+        display: block;
+        margin-right: 16px;
+    }
+    .header-buttons,.nav-menu {
+        display: none;
+    }
+    .logo {
+        margin-left: 16px;
+    }
+    .header {
+        height: 46px;
+    }
+    .ad {
+       justify-content: space-between;
+       height: 178px;
+    }
+    
+}
+@keyframes ad {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 250px;
+    }
+    100% {
+        right: 500px;
+    }
+}
+

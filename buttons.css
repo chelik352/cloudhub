@@ -1,0 +1,15 @@
+.button {
+    width: 127px;
+    background: linear-gradient(#FB432C,#FF591E);
+    border-radius: 39px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    height: 44px;
+    font-family: "inter";
+    border: none;
+    box-shadow: inset 0px -1.5px 0px 0px #FFFFFF52, inset 0px 0.5px 0px 0px #FFFFFF52;
+}
+.button-large {
+    height: 52px;
+}
