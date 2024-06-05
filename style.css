@@ -148,9 +148,12 @@ body {
     align-items: center;
     justify-content: center;
     gap:48px;
-    animation-name: ad;
+    animation-name: ad 5s linear infinite alternate;
     animation-iteration-count: infinite;
     animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    position: relative;
 }
 .first-card {
     background-color: #111111;
@@ -284,13 +287,11 @@ body {
 }
 @keyframes ad {
     0% {
-        right: 0px;
+        left: 0;
     }
-    50% {
-        right: 250px;
-    }
+  
     100% {
-        right: 500px;
+        left: 500px;
     }
 }
 
