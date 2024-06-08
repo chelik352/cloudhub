@@ -148,12 +148,6 @@ body {
     align-items: center;
     justify-content: center;
     gap:48px;
-    animation-name: ad 5s linear infinite alternate;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-direction: normal;
-    position: relative;
 }
 .first-card {
     background-color: #111111;
@@ -261,6 +255,12 @@ body {
     .first-slide-container {
         width: 100%;
     }
+    .first-card-container {
+        width: 100%;
+    }
+    .second-card-container {
+        width: 100%;
+    }
 }
 .burger-menu {
     display: none;
@@ -283,15 +283,67 @@ body {
        justify-content: space-between;
        height: 178px;
     }
+    .first-card-title {
+        font-size: 35px;
+    }
+    .first-card-info {
+        font-size: 14px;
+    }
+    .first-card-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .first-card-text {
+        margin-left: 120px;
+        margin-top: 10px;
+    }
+    .second-card-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .first-card {
+        height: 835px;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .second-card-img {
+        margin-left: 70px;
+    }
+    .first-cardFeedbacktext {
+        margin-left: 140px;
+        margin-top: 10px;
+    }
+    
     
 }
-@keyframes ad {
+@keyframes anim {
     0% {
         left: 0;
     }
-  
-    100% {
-        left: 500px;
+    50% {
+        left: 100%;
     }
+    50.1% {
+        right: 100%;
+    }
+        
+   
+    100% {
+        right: 50%;
+    }
+}
+.ad-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:48px;
+    animation-name: anim;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    position: relative;
 }
 
