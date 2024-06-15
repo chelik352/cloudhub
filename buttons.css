@@ -9,6 +9,12 @@
     font-family: "inter";
     border: none;
     box-shadow: inset 0px -1.5px 0px 0px #FFFFFF52, inset 0px 0.5px 0px 0px #FFFFFF52;
+    cursor:  pointer;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .button-large {
     height: 52px;
